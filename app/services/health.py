@@ -9,7 +9,7 @@ from typing import Callable, Dict, List, DefaultDict, Optional, cast, Union, Awa
 from fastapi import Depends, FastAPI, Request
 from fastapi.responses import JSONResponse
 
-from app.models.health import Condition, Check, HealthBody
+from app.schemas.health import Condition, Check, HealthBody
 
 
 @dataclass(frozen=True)

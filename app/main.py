@@ -1,4 +1,5 @@
 #from app.api.api_v1.router import api1_router
+from app.api.api_v1.router import api1_router
 from app.api.router import api_router
 from fastapi import FastAPI
 from app.core import config
@@ -11,4 +12,4 @@ app = FastAPI(title=config.PROJECT_NAME,
               redoc_url=config.REDOC_URL)
 
 app.include_router(api_router)
-#app.include_router(api1_router, prefix=config.API_VERSION_STR)
+app.include_router(api1_router, prefix=config.API_VERSION_STR)

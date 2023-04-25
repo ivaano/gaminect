@@ -1,7 +1,7 @@
 from datetime import datetime
 from app.core.routing import APIRouter
 from app.services.health import HealthService
-from app.models.health import Condition, Check, HealthBody
+from app.schemas.health import Condition, Check, HealthBody
 import aiohttp
 import psutil
 import dns.resolver

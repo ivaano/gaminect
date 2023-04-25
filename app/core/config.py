@@ -25,7 +25,7 @@ API_VERSION_STR = "/api/v1"
 
 
 HOST = os.getenv("HOST", "0.0.0.0")
-PORT = int(os.getenv("PORT", "8080"))
+PORT = int(os.getenv("PORT", "8000"))
 PROCESS_MANAGER = os.getenv("PROCESS_MANAGER", "uvicorn")  # gunicorn or uvicorn
 APP_MODULE = os.getenv("APP_MODULE", "app.main:app")
 ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
@@ -59,7 +59,7 @@ GUNICORN_CONF = os.getenv("GUNICORN_CONF", "python:app.core.gunicorn_conf")
 WORKER_CLASS = os.getenv("WORKER_CLASS", "uvicorn.workers.UvicornWorker")
 
 # log settings
-LOG_COLORS = getenv_boolean("LOG_COLORS", True)
+LOG_COLORS = getenv_boolean("LOG_COLORS", False)
 LOG_FORMAT = os.getenv("LOG_FORMAT", "json")  # simple, verbose, uvicorn or json
 LOG_LEVEL = os.getenv("LOG_LEVEL", "info")  # critical, error, warning, info, debug, trace
 LOG_FILTERS = os.getenv("LOG_FILTERS", "/health")
