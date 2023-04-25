@@ -5,13 +5,14 @@ from app.schemas.health import Condition, Check, HealthBody
 import aiohttp
 import psutil
 import dns.resolver
+
 router = APIRouter()
 
 
 def health_mem() -> Check:
     check = Check(
-        componentId="Process Memcheck",
-        time=datetime.now().isoformat()
+            componentId="Process Memcheck",
+            time=datetime.now().isoformat()
     )
     try:
         check.observedValue = psutil.Process().memory_info().rss / (1024 * 1024)
@@ -23,15 +24,14 @@ def health_mem() -> Check:
 
 
 async def health_check_external_ip() -> Check:
-
     check = Check(
-        componentId="External IP",
-        time=datetime.now().isoformat()
+            componentId="External IP",
+            time=datetime.now().isoformat()
     )
 
     try:
         headers = {
-            "user-agent": f"curl/7.86.0"
+                "user-agent": "curl/7.86.0"
         }
         async with aiohttp.ClientSession() as session:
             async with session.get('https://ipinfo.io', headers=headers) as response:
@@ -47,8 +47,8 @@ async def health_check_external_ip() -> Check:
 
 def health_dns() -> Check:
     check = Check(
-        componentId="DNS Resolver",
-        time=datetime.now().isoformat()
+            componentId="DNS Resolver",
+            time=datetime.now().isoformat()
     )
     try:
         resolver = dns.resolver.Resolver(configure=False)
@@ -64,10 +64,11 @@ def health_dns() -> Check:
     return check
 
 
-conditions = Condition(name="External dependencies", calls=[health_mem, health_check_external_ip, health_dns])
+conditions = Condition(name="External dependencies",
+                       calls=[health_mem, health_check_external_ip, health_dns])
 
-
-router.add_api_route("/health", HealthService([conditions], allow_version=True, allow_description=True),
+router.add_api_route("/health",
+                     endpoint=HealthService([conditions],
+                                            allow_version=True,
+                                            allow_description=True),
                      response_model=HealthBody, description="Service health checks")
-
-

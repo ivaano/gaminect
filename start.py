@@ -22,8 +22,10 @@ def set_gunicorn_options(app_module: str) -> list[str]:
 def _update_uvicorn_options(uvicorn_options: UvicornOptions) -> UvicornOptions:
     if uvicorn.__version__ >= "0.15.0":
         uvicorn_options["reload_delay"] = config.RELOAD_DELAY
-        uvicorn_options["reload_includes"] = _split_uvicorn_option(config.RELOAD_EXCLUDES)
-        uvicorn_options["reload_excludes"] = _split_uvicorn_option(config.RELOAD_INCLUDES)
+        uvicorn_options["reload_includes"] = _split_uvicorn_option(
+                config.RELOAD_EXCLUDES)
+        uvicorn_options["reload_excludes"] = _split_uvicorn_option(
+                config.RELOAD_INCLUDES)
     if value := config.UVICORN_CONFIG_OPTIONS:
         uvicorn_options_json = json.loads(value)
         uvicorn_options.update(uvicorn_options_json)

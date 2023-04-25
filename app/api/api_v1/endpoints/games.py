@@ -1,6 +1,6 @@
 import logging
 
-from fastapi import status, HTTPException
+from fastapi import status
 from app.schemas.games import Games
 
 from app.core.routing import APIRouter

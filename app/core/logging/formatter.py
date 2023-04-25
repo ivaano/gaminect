@@ -8,8 +8,12 @@ from app.core import config
 
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
 
-    def add_fields(self, log_record: Dict[str, Any], record: logging.LogRecord, message_dict: Dict[str, Any]) -> None:
-        log_record['timestamp'] = datetime.fromtimestamp(record.created, tz=timezone.utc)
+    def add_fields(self,
+                   log_record: Dict[str, Any],
+                   record: logging.LogRecord,
+                   message_dict: Dict[str, Any]) -> None:
+        log_record['timestamp'] = datetime.fromtimestamp(record.created,
+                                                         tz=timezone.utc)
         log_record['version'] = config.PROJECT_VERSION
         log_record['message'] = record.getMessage()
         log_record['logger_name'] = record.name

@@ -35,5 +35,6 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
-    "pytest"
+    "pytest",
+    "ruff"
 ]
