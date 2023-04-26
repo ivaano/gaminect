@@ -23,6 +23,12 @@ class GameCrud(AppCrud):
         self.db.refresh(game_row)
         return game_row
 
+    def upsert(self, game: Game) -> GameModel:
+        game_row = GameModel(id=game.id, name=game.name)
+        self.db.merge(game_row)
+        self.db.commit()
+        return game_row
+
     def update(self, game: Game) -> GameModel:
         self.db.add(game)
         self.db.flush()

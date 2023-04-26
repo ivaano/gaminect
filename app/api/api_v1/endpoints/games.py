@@ -19,6 +19,6 @@ def create_games(payload: Games, db: Session = Depends(get_db)):
     if len(payload.games) > 0:
         for game in payload.games:
             logger.info(f"Creating game {game.name}")
-            result = GameCrud(db).create(game)
+            result = GameCrud(db).upsert(game)
 
     return {"message": "Game created"}
