@@ -1,4 +1,5 @@
-from typing import Any, List, Optional, Union
+from datetime import datetime
+from typing import Any, List, Optional
 from pydantic import BaseModel
 
 
@@ -56,36 +57,36 @@ class CompletionStatus(BaseModel):
 
 
 class Game(BaseModel):
-    added: Optional[str]
-    added_segment: Optional[int]
-    age_rating_ids: Optional[List[str]]
-    age_ratings: Optional[List[AgeRating]]
-    background_image: Optional[str]
+    added: datetime = None
+    added_segment: int | None = 0
+    age_rating_ids: list[str] = None
+    age_ratings: list[AgeRating] = None
+    background_image: str = None
     categories: Any
     category_ids: Any
-    community_score: Optional[int]
-    community_score_group: Optional[int]
-    community_score_rating: Optional[int]
-    completion_status: Optional[CompletionStatus]
-    completion_status_id: Optional[str]
-    cover_image: Optional[str]
-    critic_score: Optional[int]
-    critic_score_group: Optional[int]
-    critic_score_rating: Optional[int]
-    description: Optional[str]
-    developer_ids: Optional[List[str]]
-    developers: Optional[List[Genre]]
+    community_score: int | None = 0
+    community_score_group: int | None = 0
+    community_score_rating: int | None = 0
+    completion_status: CompletionStatus | None = None
+    completion_status_id: str = None
+    cover_image: str = None
+    critic_score: int | None = 0
+    critic_score_group: int | None = 0
+    critic_score_rating: int | None = 0
+    description: str = None
+    developer_ids: list[str] = None
+    developers: list[Genre] = None
     enable_system_hdr: bool = False
     favorite: bool = False
-    feature_ids: Optional[List[str]]
-    features: Optional[List[Feature]]
+    feature_ids: list[str] = None
+    features: list[Feature] = None
     game_actions: Any
-    game_id: Optional[str]
+    game_id: str = None
     game_started_script: Any
-    genre_ids: Optional[List[str]]
-    genres: Optional[List[Genre]]
+    genre_ids: list[str] = None
+    genres: list[Genre] = None
     hidden: bool = False
-    icon: Optional[str]
+    icon: str = None
     id: str
     include_library_plugin_action: bool = False
     install_directory: Any
@@ -109,7 +110,7 @@ class Game(BaseModel):
     notes: Any
     override_install_state: bool = False
     platform_ids: Optional[List[str]]
-    platforms: Optional[List[Platform]]
+    platforms: list[Platform] = None
     play_count: Optional[int]
     playtime: Optional[int]
     playtime_category: Optional[int]
@@ -139,6 +140,9 @@ class Game(BaseModel):
     user_score_group: Optional[int]
     user_score_rating: Optional[int]
     version: Any
+
+    class Config:
+        orm_mode = True
 
 
 class Games(BaseModel):

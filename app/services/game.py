@@ -24,7 +24,15 @@ class GameCrud(AppCrud):
         return game_row
 
     def upsert(self, game: Game) -> GameModel:
-        game_row = GameModel(id=game.id, name=game.name)
+        game_row = GameModel(
+            id=game.id,
+            added=game.added,
+            added_segment=game.added_segment,
+            background_image=game.background_image,
+            description=game.description,
+            notes=game.notes,
+            enable_system_hdr=game.enable_system_hdr,
+            name=game.name)
         self.db.merge(game_row)
         self.db.commit()
         return game_row
