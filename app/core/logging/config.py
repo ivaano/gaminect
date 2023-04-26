@@ -68,6 +68,7 @@ LOGGING_CONFIG: DictConfig = {
         "uvicorn.access": {"propagate": True},
         "uvicorn.asgi": {"propagate": True},
         "uvicorn.error": {"propagate": True},
+        "sqlalchemy.engine.Engine": {"handlers": ["default"], "propagate": False},
     },
 }
 

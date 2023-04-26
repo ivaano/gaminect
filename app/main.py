@@ -3,6 +3,10 @@ from app.api.api_v1.router import api1_router
 from app.api.router import api_router
 from fastapi import FastAPI
 from app.core import config
+from app.core.database import engine, Base
+
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title=config.PROJECT_NAME,
               description=config.PROJECT_DESCRIPTION,

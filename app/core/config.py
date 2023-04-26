@@ -18,8 +18,8 @@ def getenv(var_name, default_value=None):
     return result
 
 
-PROJECT_NAME = "Gameinect"
-PROJECT_DESCRIPTION = "Web UI for playnite data."
+PROJECT_NAME = "Gaminect"
+PROJECT_DESCRIPTION = "Web API for playnite data."
 PROJECT_VERSION = '0.1'
 API_VERSION_STR = "/api/v1"
 
@@ -33,6 +33,7 @@ SERVICE_NAME = os.getenv("SERVICE_NAME", "gameinect")
 BACKEND_CORS_ORIGINS = os.getenv(
         "BACKEND_CORS_ORIGINS"
 )
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./app.db")
 
 docs = None
 redoc = None

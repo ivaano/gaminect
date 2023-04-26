@@ -3,7 +3,6 @@ from typing import Any, Callable, Dict, List, Optional, Union, Awaitable
 from pydantic import BaseModel, Field, validator
 
 
-# https://inadarei.github.io/rfc-healthcheck/#name-the-checks-object-2
 class Check(BaseModel):
     componentId: Optional[str] = Field(
         default=None,
