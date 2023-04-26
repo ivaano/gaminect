@@ -1,0 +1,531 @@
+GET http://localhost:8000/health
+Accept: application/json
+
+###
+POST http://localhost:8000/api/v1/games
+Content-Type: application/json
+
+{
+  "games": [
+    {
+      "background_image": "69bfd51e-4ce7-414e-83e3-99a9a7f83034\\ddc441db-5f05-4ba7-aebd-b23807e7ce0b.jpg",
+      "description": "Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities, like the power to capture and control objects, animals, and enemies to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans!",
+      "notes": null,
+      "genre_ids": [
+        "b1f2251b-d345-492e-a1f7-be909c6c18e2",
+        "75412748-d358-4c42-866d-5d6c2f5c4ec2"
+      ],
+      "enable_system_hdr": false,
+      "hidden": false,
+      "favorite": false,
+      "icon": "69bfd51e-4ce7-414e-83e3-99a9a7f83034\\5dacff72-7d02-48ab-9f29-a20663a781cd.png",
+      "cover_image": "69bfd51e-4ce7-414e-83e3-99a9a7f83034\\3011bd81-3888-4444-b096-6d72b60c3e90.jpg",
+      "install_directory": null,
+      "last_activity": null,
+      "sorting_name": null,
+      "game_id": "d6d5a247-9015-4bac-8775-9b1e02d353dd",
+      "plugin_id": "00000000-0000-0000-0000-000000000000",
+      "include_library_plugin_action": true,
+      "game_actions": null,
+      "platform_ids": [
+        "cb2b0b00-78e7-44d4-b7f6-ebc45be736e7"
+      ],
+      "publisher_ids": [
+        "efc409de-ab5b-45b3-891c-c1ea14ce57bf"
+      ],
+      "developer_ids": [
+        "efc409de-ab5b-45b3-891c-c1ea14ce57bf"
+      ],
+      "release_date": {
+        "ReleaseDate": "2017-10-27"
+      },
+      "category_ids": null,
+      "tag_ids": [
+        "075275f9-b842-48dd-8cc0-f5bd9582368b"
+      ],
+      "feature_ids": [
+        "2d167e9b-02e3-4437-accd-5353587bf702",
+        "112c4972-d61a-452f-af64-b2b8216fbca9"
+      ],
+      "links": [
+        {
+          "name": "Official Website",
+          "url": "http://www.nintendo.com/games/detail/super-mario-odyssey-switch"
+        },
+        {
+          "name": "Wikia",
+          "url": "https://www.mariowiki.com/Super_Mario_Odyssey"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
+        },
+        {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/r/SuperMarioOdyssey"
+        },
+        {
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/directory/game/Super%20Mario%20Odyssey"
+        }
+      ],
+      "roms": null,
+      "is_installing": false,
+      "is_uninstalling": false,
+      "is_launching": false,
+      "is_running": false,
+      "is_installed": true,
+      "override_install_state": false,
+      "playtime": 0,
+      "added": "2023-04-24T07:43:05.147-07:00",
+      "modified": "2023-04-24T22:26:05.341-07:00",
+      "play_count": 0,
+      "install_size": null,
+      "last_size_scan_date": null,
+      "series_ids": [
+        "d00b1192-7f13-4e11-9dba-de844e0e5abe"
+      ],
+      "version": null,
+      "age_rating_ids": [
+        "b07cd7d2-3e47-4f64-bbbf-bbe2dca63f6d",
+        "6f518b08-d6f2-4a7e-a5e0-2152d7a877c2",
+        "bf0a6789-d3a8-426a-b1fd-772a846e2094",
+        "bf08b8f4-c6ad-4193-9c88-33f82a8590cb",
+        "e1799132-779e-4ef0-b1dc-059f19168974",
+        "b451d3f3-e3eb-4e3f-a1fb-577e7c15d946",
+        "fa76b4d3-0d5e-4d25-baa4-f824ec7babfa"
+      ],
+      "region_ids": null,
+      "source_id": "00000000-0000-0000-0000-000000000000",
+      "completion_status_id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+      "user_score": null,
+      "critic_score": 97,
+      "community_score": 90,
+      "pre_script": null,
+      "post_script": null,
+      "game_started_script": null,
+      "use_global_post_script": true,
+      "use_global_pre_script": true,
+      "use_global_game_started_script": true,
+      "manual": null,
+      "genres": [
+        {
+          "id": "75412748-d358-4c42-866d-5d6c2f5c4ec2",
+          "name": "Adventure"
+        },
+        {
+          "id": "b1f2251b-d345-492e-a1f7-be909c6c18e2",
+          "name": "Platform"
+        }
+      ],
+      "developers": [
+        {
+          "id": "efc409de-ab5b-45b3-891c-c1ea14ce57bf",
+          "name": "Nintendo"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "efc409de-ab5b-45b3-891c-c1ea14ce57bf",
+          "name": "Nintendo"
+        }
+      ],
+      "tags": [
+        {
+          "id": "075275f9-b842-48dd-8cc0-f5bd9582368b",
+          "name": "Phisical"
+        }
+      ],
+      "features": [
+        {
+          "id": "112c4972-d61a-452f-af64-b2b8216fbca9",
+          "name": "Co-Operative"
+        },
+        {
+          "id": "2d167e9b-02e3-4437-accd-5353587bf702",
+          "name": "Single Player"
+        }
+      ],
+      "categories": null,
+      "platforms": [
+        {
+          "specification_id": "nintendo_switch",
+          "icon": null,
+          "cover": null,
+          "background": null,
+          "id": "cb2b0b00-78e7-44d4-b7f6-ebc45be736e7",
+          "name": "Nintendo Switch"
+        }
+      ],
+      "series": [
+        {
+          "id": "d00b1192-7f13-4e11-9dba-de844e0e5abe",
+          "name": "Super Mario"
+        }
+      ],
+      "age_ratings": [
+        {
+          "id": "bf08b8f4-c6ad-4193-9c88-33f82a8590cb",
+          "name": "ACB M"
+        },
+        {
+          "id": "fa76b4d3-0d5e-4d25-baa4-f824ec7babfa",
+          "name": "CERO B"
+        },
+        {
+          "id": "e1799132-779e-4ef0-b1dc-059f19168974",
+          "name": "ClassInd 10"
+        },
+        {
+          "id": "b07cd7d2-3e47-4f64-bbbf-bbe2dca63f6d",
+          "name": "ESRB E10"
+        },
+        {
+          "id": "b451d3f3-e3eb-4e3f-a1fb-577e7c15d946",
+          "name": "GRAC 12"
+        },
+        {
+          "id": "6f518b08-d6f2-4a7e-a5e0-2152d7a877c2",
+          "name": "PEGI 7"
+        },
+        {
+          "id": "bf0a6789-d3a8-426a-b1fd-772a846e2094",
+          "name": "USK 6"
+        }
+      ],
+      "regions": null,
+      "source": null,
+      "completion_status": {
+        "id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+        "name": "Not Played"
+      },
+      "release_year": 2017,
+      "recent_activity": "2023-04-24T07:43:05.147-07:00",
+      "user_score_rating": 0,
+      "community_score_rating": 2,
+      "critic_score_rating": 2,
+      "user_score_group": 10,
+      "community_score_group": 9,
+      "critic_score_group": 9,
+      "last_activity_segment": 6,
+      "recent_activity_segment": 0,
+      "added_segment": 0,
+      "modified_segment": 0,
+      "playtime_category": 0,
+      "install_size_group": 0,
+      "is_custom_game": true,
+      "installation_status": 0,
+      "id": "69bfd51e-4ce7-414e-83e3-99a9a7f83034",
+      "name": "Super Mario Odyssey"
+    },
+    {
+      "background_image": null,
+      "description": null,
+      "notes": null,
+      "genre_ids": null,
+      "enable_system_hdr": false,
+      "hidden": false,
+      "favorite": false,
+      "icon": null,
+      "cover_image": null,
+      "install_directory": null,
+      "last_activity": null,
+      "sorting_name": null,
+      "game_id": "2c40c257-4c08-400b-b80b-6ecdde3a09fb",
+      "plugin_id": "00000000-0000-0000-0000-000000000000",
+      "include_library_plugin_action": true,
+      "game_actions": null,
+      "platform_ids": null,
+      "publisher_ids": null,
+      "developer_ids": null,
+      "release_date": null,
+      "category_ids": null,
+      "tag_ids": null,
+      "feature_ids": null,
+      "links": null,
+      "roms": null,
+      "is_installing": false,
+      "is_uninstalling": false,
+      "is_launching": false,
+      "is_running": false,
+      "is_installed": true,
+      "override_install_state": false,
+      "playtime": 0,
+      "added": "2023-04-24T22:32:45.2657585-07:00",
+      "modified": "2023-04-24T22:32:52.1493453-07:00",
+      "play_count": 0,
+      "install_size": null,
+      "last_size_scan_date": null,
+      "series_ids": null,
+      "version": null,
+      "age_rating_ids": null,
+      "region_ids": null,
+      "source_id": "00000000-0000-0000-0000-000000000000",
+      "completion_status_id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+      "user_score": null,
+      "critic_score": null,
+      "community_score": null,
+      "pre_script": null,
+      "post_script": null,
+      "game_started_script": null,
+      "use_global_post_script": true,
+      "use_global_pre_script": true,
+      "use_global_game_started_script": true,
+      "manual": null,
+      "genres": null,
+      "developers": null,
+      "publishers": null,
+      "tags": null,
+      "features": null,
+      "categories": null,
+      "platforms": null,
+      "series": null,
+      "age_ratings": null,
+      "regions": null,
+      "source": null,
+      "completion_status": {
+        "id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+        "name": "Not Played"
+      },
+      "release_year": null,
+      "recent_activity": "2023-04-24T22:32:45.2657585-07:00",
+      "user_score_rating": 0,
+      "community_score_rating": 0,
+      "critic_score_rating": 0,
+      "user_score_group": 10,
+      "community_score_group": 10,
+      "critic_score_group": 10,
+      "last_activity_segment": 6,
+      "recent_activity_segment": 0,
+      "added_segment": 0,
+      "modified_segment": 0,
+      "playtime_category": 0,
+      "install_size_group": 0,
+      "is_custom_game": true,
+      "installation_status": 0,
+      "id": "e4834194-d832-4b12-bcc6-1789ae3a5b54",
+      "name": "Bogus Game"
+    },
+    {
+      "background_image": "ad20c59c-0150-42a6-a4a5-bef867a945b5\\bd69e2af-bc41-4efe-b091-e36798d50d5d.jpg",
+      "description": "Hit the road with the definitive version of Mario Kart 8 and play anytime, anywhere! Race your friends or battle them in a revised battle mode on new and returning battle courses. Play locally in up to 4-player multiplayer in 1080p while playing in TV Mode. Every track from the Wii U version, including DLC, makes a glorious return. Plus, the Inklings appear as all-new guest characters, along with returning favorites, such as King Boo, Dry Bones, and Bowser Jr.!",
+      "notes": null,
+      "genre_ids": [
+        "69519afc-4914-484f-a4f4-cb9755aa2b46",
+        "598b29ec-dd74-4d54-828e-0e4777a3197a"
+      ],
+      "enable_system_hdr": false,
+      "hidden": false,
+      "favorite": false,
+      "icon": null,
+      "cover_image": "ad20c59c-0150-42a6-a4a5-bef867a945b5\\2af99c33-2db2-4a3c-b120-e0a0b1127920.jpg",
+      "install_directory": null,
+      "last_activity": null,
+      "sorting_name": null,
+      "game_id": "75ad849f-192d-443a-b1f6-6147fec7050b",
+      "plugin_id": "00000000-0000-0000-0000-000000000000",
+      "include_library_plugin_action": true,
+      "game_actions": null,
+      "platform_ids": [
+        "cb2b0b00-78e7-44d4-b7f6-ebc45be736e7"
+      ],
+      "publisher_ids": [
+        "5ebfb3b3-dda6-41c1-a655-6ebbe5226efd",
+        "098c7d44-04bc-4760-ba26-97f77ed0db1a"
+      ],
+      "developer_ids": [
+        "3c5d0035-54cc-47fa-96c3-76b356fdd876"
+      ],
+      "release_date": {
+        "ReleaseDate": "2017-4-28"
+      },
+      "category_ids": null,
+      "tag_ids": [
+        "075275f9-b842-48dd-8cc0-f5bd9582368b"
+      ],
+      "feature_ids": [
+        "2d167e9b-02e3-4437-accd-5353587bf702",
+        "9561494b-b8a6-4923-b464-351b65e95c8a",
+        "9815c4e2-393c-4d44-bec8-3fd1e18fa970"
+      ],
+      "links": [
+        {
+          "name": "Wikia",
+          "url": "https://www.mariowiki.com/Mario_Kart_8_Deluxe"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mario_Kart_8"
+        },
+        {
+          "name": "Official Website",
+          "url": "https://mariokart8deluxe.nintendo.com/"
+        },
+        {
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/directory/game/Mario%20Kart%208%20Deluxe"
+        },
+        {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/r/MarioKart8Deluxe"
+        }
+      ],
+      "roms": null,
+      "is_installing": false,
+      "is_uninstalling": false,
+      "is_launching": false,
+      "is_running": false,
+      "is_installed": true,
+      "override_install_state": false,
+      "playtime": 0,
+      "added": "2023-04-24T22:25:16.254-07:00",
+      "modified": "2023-04-24T22:25:54.589-07:00",
+      "play_count": 0,
+      "install_size": null,
+      "last_size_scan_date": null,
+      "series_ids": [
+        "4da63d32-d94b-4ba1-8b8f-4545f1b15600"
+      ],
+      "version": null,
+      "age_rating_ids": [
+        "e1799132-779e-4ef0-b1dc-059f19168974",
+        "b451d3f3-e3eb-4e3f-a1fb-577e7c15d946",
+        "bdfaee5b-c010-4cc7-8c66-1bc7a97aaddf",
+        "9a0718fc-9bb9-4758-b11a-545a66067f68",
+        "82839122-8fa0-40dd-83d6-03f2778a76e1",
+        "4a92788b-9550-41f7-b71b-223f16bf9789",
+        "187e96fb-b8d2-46dd-a143-8e6e8cd2be25"
+      ],
+      "region_ids": null,
+      "source_id": "00000000-0000-0000-0000-000000000000",
+      "completion_status_id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+      "user_score": null,
+      "critic_score": 93,
+      "community_score": 84,
+      "pre_script": null,
+      "post_script": null,
+      "game_started_script": null,
+      "use_global_post_script": true,
+      "use_global_pre_script": true,
+      "use_global_game_started_script": true,
+      "manual": null,
+      "genres": [
+        {
+          "id": "598b29ec-dd74-4d54-828e-0e4777a3197a",
+          "name": "Arcade"
+        },
+        {
+          "id": "69519afc-4914-484f-a4f4-cb9755aa2b46",
+          "name": "Racing"
+        }
+      ],
+      "developers": [
+        {
+          "id": "3c5d0035-54cc-47fa-96c3-76b356fdd876",
+          "name": "Nintendo EPD"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "5ebfb3b3-dda6-41c1-a655-6ebbe5226efd",
+          "name": "Nintendo of America"
+        },
+        {
+          "id": "098c7d44-04bc-4760-ba26-97f77ed0db1a",
+          "name": "Nintendo of Europe"
+        }
+      ],
+      "tags": [
+        {
+          "id": "075275f9-b842-48dd-8cc0-f5bd9582368b",
+          "name": "Phisical"
+        }
+      ],
+      "features": [
+        {
+          "id": "9561494b-b8a6-4923-b464-351b65e95c8a",
+          "name": "Multiplayer"
+        },
+        {
+          "id": "2d167e9b-02e3-4437-accd-5353587bf702",
+          "name": "Single Player"
+        },
+        {
+          "id": "9815c4e2-393c-4d44-bec8-3fd1e18fa970",
+          "name": "Split Screen"
+        }
+      ],
+      "categories": null,
+      "platforms": [
+        {
+          "specification_id": "nintendo_switch",
+          "icon": null,
+          "cover": null,
+          "background": null,
+          "id": "cb2b0b00-78e7-44d4-b7f6-ebc45be736e7",
+          "name": "Nintendo Switch"
+        }
+      ],
+      "series": [
+        {
+          "id": "4da63d32-d94b-4ba1-8b8f-4545f1b15600",
+          "name": "Mario Kart"
+        }
+      ],
+      "age_ratings": [
+        {
+          "id": "187e96fb-b8d2-46dd-a143-8e6e8cd2be25",
+          "name": "ACB PG"
+        },
+        {
+          "id": "4a92788b-9550-41f7-b71b-223f16bf9789",
+          "name": "CERO A"
+        },
+        {
+          "id": "e1799132-779e-4ef0-b1dc-059f19168974",
+          "name": "ClassInd 10"
+        },
+        {
+          "id": "bdfaee5b-c010-4cc7-8c66-1bc7a97aaddf",
+          "name": "ESRB E"
+        },
+        {
+          "id": "b451d3f3-e3eb-4e3f-a1fb-577e7c15d946",
+          "name": "GRAC 12"
+        },
+        {
+          "id": "9a0718fc-9bb9-4758-b11a-545a66067f68",
+          "name": "PEGI 3"
+        },
+        {
+          "id": "82839122-8fa0-40dd-83d6-03f2778a76e1",
+          "name": "USK 0"
+        }
+      ],
+      "regions": null,
+      "source": null,
+      "completion_status": {
+        "id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+        "name": "Not Played"
+      },
+      "release_year": 2017,
+      "recent_activity": "2023-04-24T22:25:16.254-07:00",
+      "user_score_rating": 0,
+      "community_score_rating": 2,
+      "critic_score_rating": 2,
+      "user_score_group": 10,
+      "community_score_group": 8,
+      "critic_score_group": 9,
+      "last_activity_segment": 6,
+      "recent_activity_segment": 0,
+      "added_segment": 0,
+      "modified_segment": 0,
+      "playtime_category": 0,
+      "install_size_group": 0,
+      "is_custom_game": true,
+      "installation_status": 0,
+      "id": "ad20c59c-0150-42a6-a4a5-bef867a945b5",
+      "name": "Mario Kart 8 Deluxe"
+    }
+  ]
+}
