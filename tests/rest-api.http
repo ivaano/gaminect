@@ -5,6 +5,226 @@ Accept: application/json
 POST http://localhost:8000/api/v1/games
 Content-Type: application/json
 
+{"games" : [
+{
+      "background_image": "69bfd51e-4ce7-414e-83e3-99a9a7f83034\\ddc441db-5f05-4ba7-aebd-b23807e7ce0b.jpg",
+      "description": "Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities, like the power to capture and control objects, animals, and enemies to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans!",
+      "notes": null,
+      "genre_ids": [
+        "b1f2251b-d345-492e-a1f7-be909c6c18e2",
+        "75412748-d358-4c42-866d-5d6c2f5c4ec2"
+      ],
+      "enable_system_hdr": false,
+      "hidden": false,
+      "favorite": false,
+      "icon": "69bfd51e-4ce7-414e-83e3-99a9a7f83034\\5dacff72-7d02-48ab-9f29-a20663a781cd.png",
+      "cover_image": "69bfd51e-4ce7-414e-83e3-99a9a7f83034\\3011bd81-3888-4444-b096-6d72b60c3e90.jpg",
+      "install_directory": null,
+      "last_activity": null,
+      "sorting_name": null,
+      "game_id": "d6d5a247-9015-4bac-8775-9b1e02d353dd",
+      "plugin_id": "00000000-0000-0000-0000-000000000000",
+      "include_library_plugin_action": true,
+      "game_actions": null,
+      "platform_ids": [
+        "cb2b0b00-78e7-44d4-b7f6-ebc45be736e7"
+      ],
+      "publisher_ids": [
+        "efc409de-ab5b-45b3-891c-c1ea14ce57bf"
+      ],
+      "developer_ids": [
+        "efc409de-ab5b-45b3-891c-c1ea14ce57bf"
+      ],
+      "release_date": {
+        "ReleaseDate": "2017-10-27"
+      },
+      "category_ids": null,
+      "tag_ids": [
+        "075275f9-b842-48dd-8cc0-f5bd9582368b"
+      ],
+      "feature_ids": [
+        "2d167e9b-02e3-4437-accd-5353587bf702",
+        "112c4972-d61a-452f-af64-b2b8216fbca9"
+      ],
+      "links": [
+        {
+          "name": "Official Website",
+          "url": "http://www.nintendo.com/games/detail/super-mario-odyssey-switch"
+        },
+        {
+          "name": "Wikia",
+          "url": "https://www.mariowiki.com/Super_Mario_Odyssey"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
+        },
+        {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/r/SuperMarioOdyssey"
+        },
+        {
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/directory/game/Super%20Mario%20Odyssey"
+        }
+      ],
+      "roms": null,
+      "is_installing": false,
+      "is_uninstalling": false,
+      "is_launching": false,
+      "is_running": false,
+      "is_installed": true,
+      "override_install_state": false,
+      "playtime": 0,
+      "added": "2023-04-24T07:43:05.147-07:00",
+      "modified": "2023-04-24T22:26:05.341-07:00",
+      "play_count": 0,
+      "install_size": null,
+      "last_size_scan_date": null,
+      "series_ids": [
+        "d00b1192-7f13-4e11-9dba-de844e0e5abe"
+      ],
+      "version": null,
+      "age_rating_ids": [
+        "b07cd7d2-3e47-4f64-bbbf-bbe2dca63f6d",
+        "6f518b08-d6f2-4a7e-a5e0-2152d7a877c2",
+        "bf0a6789-d3a8-426a-b1fd-772a846e2094",
+        "bf08b8f4-c6ad-4193-9c88-33f82a8590cb",
+        "e1799132-779e-4ef0-b1dc-059f19168974",
+        "b451d3f3-e3eb-4e3f-a1fb-577e7c15d946",
+        "fa76b4d3-0d5e-4d25-baa4-f824ec7babfa"
+      ],
+      "region_ids": null,
+      "source_id": "00000000-0000-0000-0000-000000000000",
+      "completion_status_id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+      "user_score": null,
+      "critic_score": 97,
+      "community_score": 90,
+      "pre_script": null,
+      "post_script": null,
+      "game_started_script": null,
+      "use_global_post_script": true,
+      "use_global_pre_script": true,
+      "use_global_game_started_script": true,
+      "manual": null,
+      "genres": [
+        {
+          "id": "75412748-d358-4c42-866d-5d6c2f5c4ec2",
+          "name": "Adventure"
+        },
+        {
+          "id": "b1f2251b-d345-492e-a1f7-be909c6c18e2",
+          "name": "Platform"
+        }
+      ],
+      "developers": [
+        {
+          "id": "efc409de-ab5b-45b3-891c-c1ea14ce57bf",
+          "name": "Nintendo"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "efc409de-ab5b-45b3-891c-c1ea14ce57bf",
+          "name": "Nintendo"
+        }
+      ],
+      "tags": [
+        {
+          "id": "075275f9-b842-48dd-8cc0-f5bd9582368b",
+          "name": "Phisical"
+        }
+      ],
+      "features": [
+        {
+          "id": "112c4972-d61a-452f-af64-b2b8216fbca9",
+          "name": "Co-Operative"
+        },
+        {
+          "id": "2d167e9b-02e3-4437-accd-5353587bf702",
+          "name": "Single Player"
+        }
+      ],
+      "categories": null,
+      "platforms": [
+        {
+          "specification_id": "nintendo_switch",
+          "icon": null,
+          "cover": null,
+          "background": null,
+          "id": "cb2b0b00-78e7-44d4-b7f6-ebc45be736e7",
+          "name": "Nintendo Switch"
+        }
+      ],
+      "series": [
+        {
+          "id": "d00b1192-7f13-4e11-9dba-de844e0e5abe",
+          "name": "Super Mario"
+        }
+      ],
+      "age_ratings": [
+        {
+          "id": "bf08b8f4-c6ad-4193-9c88-33f82a8590cb",
+          "name": "ACB M"
+        },
+        {
+          "id": "fa76b4d3-0d5e-4d25-baa4-f824ec7babfa",
+          "name": "CERO B"
+        },
+        {
+          "id": "e1799132-779e-4ef0-b1dc-059f19168974",
+          "name": "ClassInd 10"
+        },
+        {
+          "id": "b07cd7d2-3e47-4f64-bbbf-bbe2dca63f6d",
+          "name": "ESRB E10"
+        },
+        {
+          "id": "b451d3f3-e3eb-4e3f-a1fb-577e7c15d946",
+          "name": "GRAC 12"
+        },
+        {
+          "id": "6f518b08-d6f2-4a7e-a5e0-2152d7a877c2",
+          "name": "PEGI 7"
+        },
+        {
+          "id": "bf0a6789-d3a8-426a-b1fd-772a846e2094",
+          "name": "USK 6"
+        }
+      ],
+      "regions": null,
+      "source": null,
+      "completion_status": {
+        "id": "e56140ce-03b6-4c1c-b278-31cd0144c4b0",
+        "name": "Not Played"
+      },
+      "release_year": 2017,
+      "recent_activity": "2023-04-24T07:43:05.147-07:00",
+      "user_score_rating": 0,
+      "community_score_rating": 2,
+      "critic_score_rating": 2,
+      "user_score_group": 10,
+      "community_score_group": 9,
+      "critic_score_group": 9,
+      "last_activity_segment": 6,
+      "recent_activity_segment": 0,
+      "added_segment": 0,
+      "modified_segment": 0,
+      "playtime_category": 0,
+      "install_size_group": 0,
+      "is_custom_game": true,
+      "installation_status": 0,
+      "id": "89bfd51e-4ce7-414e-83e3-99a9a7f83034",
+      "name": "Chango leon"
+    }
+    ]
+    }
+
+
+###
+POST http://localhost:8000/api/v1/games
+Content-Type: application/json
+
 {
   "games": [
     {

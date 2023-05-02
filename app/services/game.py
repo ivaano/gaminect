@@ -1,20 +1,22 @@
 from typing import Type
 
+from sqlalchemy.orm import joinedload
+
 from app.core.guid_type import GUID
-from app.schemas.game import Game
-from app.models.game import Game as GameModel
-from app.services.main import AppCrud
+from app.schemas.playnite import Game
+from app.models.gaminect import Game as GameModel, Genre
+from app.services.main import AppService
 
 
-class GameCrud(AppCrud):
+class GameService(AppService):
     def get(self, game_id: GUID) -> Type[GameModel] | None:
-        return self.db.query(Game).filter(GameModel.id == game_id).first()
+        return self.db.query(GameModel).filter(GameModel.id == game_id).first()
 
     def get_by_name(self, name: str) -> GameModel:
-        return self.db.query(Game).filter(GameModel.name == name).first()
+        return self.db.query(GameModel).filter(GameModel.name == name).first()
 
     def get_all(self) -> list[Type[GameModel]]:
-        return self.db.query(GameModel).all()
+        return self.db.query(GameModel).options(joinedload(GameModel.genres)).all()
 
     def create(self, game: Game) -> GameModel:
         game_row = GameModel(id=game.id, name=game.name)
@@ -24,8 +26,9 @@ class GameCrud(AppCrud):
         return game_row
 
     def upsert(self, game: Game) -> GameModel:
+
         game_row = GameModel(
-            id=game.id,
+            playnite_id=game.id,
             added=game.added,
             added_segment=game.added_segment,
             background_image=game.background_image,
@@ -33,6 +36,17 @@ class GameCrud(AppCrud):
             notes=game.notes,
             enable_system_hdr=game.enable_system_hdr,
             name=game.name)
+
+        if game.genres:
+            for genre in game.genres:
+                genre_row = self.db.query(Genre).filter(Genre.playnite_id == genre.id).first()
+                if genre_row is None:
+                    genre_row = Genre(name=genre.name, playnite_id=genre.id)
+                    self.db.add(genre_row)
+                    self.db.commit()
+                    self.db.refresh(genre_row)
+                game_row.genres.append(genre_row)
+
         self.db.merge(game_row)
         self.db.commit()
         return game_row
